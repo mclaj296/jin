@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+background-color: white;
+}
+
+h1{
+    font-family: monospace;
+margin-top: 6%;
+display: block;
+margin-left: 1.6%;
+font-size: 30px;
+color: black;
+}
+
+.description{
+font-family: monospace;
+font-style: normal;
+font-weight: 300;
+
+margin-top: 5%;
+margin: 0px;
+display: block;
+margin-left: 1.7%;
+font-size: 13px;
+color: black;
+max-width: 350px;
+}
+
+.center{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -5%;
+}
+
+.dropdown{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 2%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown button{
+    font-family: "neue-haas-grotesk-text", sans-serif;
+font-weight: 500;
+font-style: normal;
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 4px 15px;
+}
+.dropdown .content{
+    font-family: "neue-haas-grotesk-text", sans-serif;
+font-weight: 500;
+font-style: normal;
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: white;
+    min-width: 250px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+    padding: -40px 8%;
+    align-items: left;
+    justify-content: left;
+    margin-top: 266px;
+    margin-left: 49px;
+}
+.dropdown:hover .content{
+    display: block;
+}
+.dropdown:hover button{
+    background-color: dimgray;
+}
+.dropdown a:hover{
+    background-color: dimgray;
+}
+
+.gallery{
+    width:900px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.gallery div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+
+}
+
+.gallery div img{
+    width: 100%;
+    transition: transform 0.5s;
+}
+
+.gallery::webkit-scrollbar{
+    display: none;
+}
+
+.gallery-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5% auto;
+}
+
+.gallery div img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
